@@ -1,121 +1,121 @@
 //Possessed Soldiers
-//$rolloff grunt/sight	linear	64 512
-//$rolloff grunt/pain	linear	64 512
-//$rolloff grunt/active	linear	64 512
-//$rolloff grunt/death	linear	64 512
+//$rolloff grunt/sight      linear 64 512
+//$rolloff grunt/pain       linear 64 512
+//$rolloff grunt/active     linear 64 512
+//$rolloff grunt/death      linear 64 512
 
-$random shotguy/sight		{ shotguy/sight1  shotguy/sight2  shotguy/sight3 }
-$random shotguy/active	{ shotguy/act1  shotguy/act2 }
-$random shotguy/pain		{ shotguy/pn1  shotguy/pn2  shotguy/pn3 }
-$random shotguy/death		{ shotguy/death1  shotguy/death2 }
-shotguy/sight1			sguysee1
-shotguy/sight2			sguysee2
-shotguy/sight3			sguysee3
-shotguy/act1				sguyact1
-shotguy/act2				sguyact2
-shotguy/pn1				sguypn1
-shotguy/pn2				sguypn2
-shotguy/pn3				sguypn3
-shotguy/death1			sguydie1
-shotguy/death2			sguydie2
+$random shotguy/sight       { shotguy/sight1 shotguy/sight2 shotguy/sight3 }
+$random shotguy/active      { shotguy/act1 shotguy/act2 }
+$random shotguy/pain        { shotguy/pn1 shotguy/pn2 shotguy/pn3 }
+$random shotguy/death       { shotguy/death1 shotguy/death2 }
+shotguy/sight1              sguysee1
+shotguy/sight2              sguysee2
+shotguy/sight3              sguysee3
+shotguy/act1                sguyact1
+shotguy/act2                sguyact2
+shotguy/pn1                 sguypn1
+shotguy/pn2                 sguypn2
+shotguy/pn3                 sguypn3
+shotguy/death1              sguydie1
+shotguy/death2              sguydie2
 
-chainguy/sight		CHAINSEE
-chainguy/death		CHAINDIE
-chainguy/active		CHAINACT
-chainguy/pain		CHANPAIN
-chainguy/attack	dszomsht
+chainguy/sight              CHAINSEE
+chainguy/death              CHAINDIE
+chainguy/active             CHAINACT
+chainguy/pain               CHANPAIN
+chainguy/attack             dszomsht
 
 //Imp
-//$rolloff imp/sight	linear	64 512
-//$rolloff imp/pain	linear	64 512
-//$rolloff imp/active	linear	64 512
-//$rolloff imp/death	linear	64 512
-imp/pain			dsimppn
+//$rolloff imp/sight        linear 64 512
+//$rolloff imp/pain	linear  64 512
+//$rolloff imp/active       linear 64 512
+//$rolloff imp/death        linear 64 512
+imp/pain                    dsimppn
 
 //Archvile
-//$rolloff vile/sight	linear	64 512
-//$rolloff vile/pain	linear	64 512
-//$rolloff vile/active	linear	64 512
-//$rolloff vile/death	linear	64 512
+//$rolloff vile/sight       linear 64 512
+//$rolloff vile/pain        linear 64 512
+//$rolloff vile/active      linear 64 512
+//$rolloff vile/death       linear 64 512
 
 //Arachnotron
-//$rolloff baby/sight linear	64 512
-//$rolloff baby/pain	linear	64 512
-//$rolloff baby/active	linear	64 512
-//$rolloff baby/death	linear	64 512
-$rolloff baby/walk	linear	64 768
+//$rolloff baby/sight       linear 64 512
+//$rolloff baby/pain        linear 64 512
+//$rolloff baby/active      linear 64 512
+//$rolloff baby/death       linear 64 512
+$rolloff baby/walk          linear 64 768
 
 //Mancubus
-//$rolloff fatso/sight	linear	64 512
-//$rolloff fatso/pain	linear	64 512
-//$rolloff fatso/death	linear	64 512
-//$rolloff fat/act1	linear	64 512
-//$rolloff fat/act2	linear	64 512
-//$rolloff fat/act3	linear	64 512
-$random fatso/active { fat/act1 fat/act2 fat/act3 }
-fat/act1	mancact1
-fat/act2	mancact2
-fat/act3	mancact3
+//$rolloff fatso/sight      linear 64 512
+//$rolloff fatso/pain       linear 64 512
+//$rolloff fatso/death      linear 64 512
+//$rolloff fat/act1         linear 64 512
+//$rolloff fat/act2         linear 64 512
+//$rolloff fat/act3         linear 64 512
+$random fatso/active        { fat/act1 fat/act2 fat/act3 }
+fat/act1                    mancact1
+fat/act2                    mancact2
+fat/act3                    mancact3
 
 //Lost Soul
-//$rolloff skull/see	linear	64 512
-$rolloff skull/melee	linear	64 512
-$rolloff skull/active	linear	64 512
-//$rolloff skull/pain	linear	64 512
-//$rolloff skull/death	linear	64 512
-skull/see		soulsee
-skull/melee		soulattk
-skull/pain		soulpain
-skull/death		souldie
+//$rolloff skull/see        linear 64 512
+$rolloff skull/melee        linear 64 512
+$rolloff skull/active       linear 64 512
+//$rolloff skull/pain       linear 64 512
+//$rolloff skull/death      linear 64 512
+skull/see                   soulsee
+skull/melee                 soulattk
+skull/pain                  soulpain
+skull/death                 souldie
 
 //Cacodemon
-//$rolloff caco/sight	linear	64 512
-//$rolloff caco/active	linear	64 512
-//$rolloff caco/pain	linear	64 512
-caco/active		cacoact
-caco/pain		cacopain
+//$rolloff caco/sight       linear 64 512
+//$rolloff caco/active      linear 64 512
+//$rolloff caco/pain        linear 64 512
+caco/active                 cacoact
+caco/pain                   cacopain
 
 //Baron of Hell
-//$rolloff baron/active	linear	64 512
-baron/active	baron
-baron/pain		barpain
+//$rolloff baron/active     linear 64 512
+baron/active                baron
+baron/pain                  barpain
 
 //Hell Knight
-//$rolloff knight/active	linear	64 512
-knight/active	hkact
-knight/pain		barpain
+//$rolloff knight/active    linear 64 512
+knight/active               hkact
+knight/pain                 barpain
 
 //Pain Elemental
-//$rolloff pain/sight	linear	64 512
-//$rolloff pain/pain	linear	64 512
-//$rolloff pain/death	linear	64 512
-//$rolloff pain/act1	linear	64 512
-//$rolloff pain/act2	linear	64 512
-$random pain/active { pain/act1 pain/act2 }
-pain/act1	painact
-pain/act2	painact2
+//$rolloff pain/sight       linear 64 512
+//$rolloff pain/pain        linear 64 512
+//$rolloff pain/death       linear 64 512
+//$rolloff pain/act1        linear 64 512
+//$rolloff pain/act2        linear 64 512
+$random pain/active         { pain/act1 pain/act2 }
+pain/act1                   painact
+pain/act2                   painact2
 
 //Revenant
-//$rolloff skeleton/sight	linear	64 512
-//$rolloff skeleton/pain	linear	64 512
-//$rolloff skeleton/active	linear	64 512
-//$rolloff skeleton/death	linear	64 512
-skeleton/pain	revpain
+//$rolloff skeleton/sight   linear 64 512
+//$rolloff skeleton/pain    linear 64 512
+//$rolloff skeleton/active  linear 64 512
+//$rolloff skeleton/death   linear 64 512
+skeleton/pain               revpain
 
 //Demon
-$random demon/active { dem/act1 dem/act2 dem/act3 dem/act4 }
-$random spectre/active { dem/act1 dem/act2 dem/act3 dem/act4 }
-$rolloff dem/act1	linear	64 512
-$rolloff dem/act2	linear	64 512
-$rolloff dem/act3	linear	64 512
-$rolloff dem/act4	linear	64 512
-dem/act1	demact1
-dem/act2	demact2
-dem/act3	demact3
-dem/act4	demact4
-$random demon/pain { dem/pain1 dem/pain2 }
-$random spectre/pain { dem/pain1 dem/pain2 }
-//$rolloff dem/pain1	linear	64 512
-//$rolloff dem/pain2	linear	64 512
-dem/pain1	dempain1
-dem/pain2	dempain2
+$random demon/active        { dem/act1 dem/act2 dem/act3 dem/act4 }
+$random spectre/active      { dem/act1 dem/act2 dem/act3 dem/act4 }
+$rolloff dem/act1           linear 64 512
+$rolloff dem/act2           linear 64 512
+$rolloff dem/act3           linear 64 512
+$rolloff dem/act4           linear 64 512
+dem/act1                    demact1
+dem/act2                    demact2
+dem/act3                    demact3
+dem/act4                    demact4
+$random demon/pain          { dem/pain1 dem/pain2 }
+$random spectre/pain        { dem/pain1 dem/pain2 }
+//$rolloff dem/pain1        linear 64 512
+//$rolloff dem/pain2        linear 64 512
+dem/pain1                   dempain1
+dem/pain2                   dempain2

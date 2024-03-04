@@ -1,1 +1,1 @@
-#include decorate/DEC_MONS
+#include decorate/DEC_MONS.txt
