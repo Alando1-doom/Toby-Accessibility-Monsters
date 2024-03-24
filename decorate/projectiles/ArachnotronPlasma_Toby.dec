@@ -1,0 +1,25 @@
+ACTOR ArachnotronPlasma_Toby replaces ArachnotronPlasma
+{
+    Game Doom
+    SpawnID 129
+    Radius 13
+    Height 8
+    Speed 25
+    Damage 5
+    Projectile
+    +RANDOMIZE
+    +THRUGHOST
+    RenderStyle Add
+    Alpha 0.75
+    SeeSound "baby/attack"
+    DeathSound "baby/shotx"
+    States
+    {
+    Spawn:
+        APLS AB 5 BRIGHT
+        Loop
+    Death:
+        APBX ABCDE 5 BRIGHT
+        Stop
+    }
+}

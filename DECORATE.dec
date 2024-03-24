@@ -1,0 +1,22 @@
+//Projectiles
+#include "decorate/projectiles/ArachnotronPlasma_Toby.dec"
+#include "decorate/projectiles/BaronBall_Toby.dec"
+#include "decorate/projectiles/CacodemonBall_Toby.dec"
+#include "decorate/projectiles/DoomImpBall_Toby.dec"
+#include "decorate/projectiles/FatShot_Toby.dec"
+
+//Monsters
+#include "decorate/monsters/Archvile_Toby.dec"
+#include "decorate/monsters/BaronOfHell_Toby.dec"
+#include "decorate/monsters/Cacodemon_Toby.dec"
+#include "decorate/monsters/ChaingunGuy_Toby.dec"
+#include "decorate/monsters/Demon_Toby.dec"
+#include "decorate/monsters/DoomImp_Toby.dec"
+#include "decorate/monsters/HellKnight_Toby.dec"
+#include "decorate/monsters/LostSoul_Toby.dec"
+#include "decorate/monsters/PainElemental_Toby.dec"
+#include "decorate/monsters/Revenant_Toby.dec"
+#include "decorate/monsters/ShotgunGuy_Toby.dec"
+#include "decorate/monsters/Spectre_Toby.dec"
+#include "decorate/monsters/WolfensteinSS_Toby.dec"
+#include "decorate/monsters/ZombieMan_Toby.dec"

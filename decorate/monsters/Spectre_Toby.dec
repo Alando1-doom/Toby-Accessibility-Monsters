@@ -1,0 +1,18 @@
+//===========================================================================
+//
+// Spectre
+//
+//===========================================================================
+ACTOR Spectre_Toby : Demon_Toby replaces Spectre
+{
+    SpawnID 9
+    //+SHADOW
+    RenderStyle OptFuzzy
+    Alpha 0.5
+    SeeSound "spectre/sight"
+    AttackSound "spectre/melee"
+    PainSound "spectre/pain"
+    DeathSound "spectre/death"
+    ActiveSound "spectre/active"
+    HitObituary "$OB_SPECTREHIT"
+}
