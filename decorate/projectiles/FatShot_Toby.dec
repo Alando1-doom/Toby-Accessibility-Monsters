@@ -1,0 +1,27 @@
+ACTOR FatShot_Toby replaces FatShot
+{
+    Game Doom
+    SpawnID 153
+    Radius 6
+    Height 8
+    Speed 20
+    Damage 8
+    Projectile
+    +RANDOMIZE
+    +THRUGHOST
+    RenderStyle Add
+    Alpha 1
+    SeeSound "fatso/attack"
+    DeathSound "fatso/shotx"
+    States
+    {
+    Spawn:
+        MANF AB 4 BRIGHT
+        Loop
+    Death:
+        MISL B 8 BRIGHT
+        MISL C 6 BRIGHT
+        MISL D 4 BRIGHT
+        Stop
+    }
+}
