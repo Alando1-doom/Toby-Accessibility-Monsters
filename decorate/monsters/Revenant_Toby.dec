@@ -50,9 +50,16 @@ ACTOR Revenant_Toby replaces Revenant
         SKEL I 6 A_SkelFist
         Goto See
     Missile:
+		SKEL J 1 Bright A_Jump(80, "FireSeeker")
         SKEL J 1 BRIGHT A_FaceTarget
+        SKEL J 8 BRIGHT A_FaceTarget
+        SKEL K 10 A_CustomMissile("RevenantTracer1_Toby", 48, 0, 0, 0, 0)
+        SKEL K 10 A_FaceTarget
+        Goto See
+	FireSeeker:
+		SKEL J 1 BRIGHT A_FaceTarget
         SKEL J 9 BRIGHT A_FaceTarget
-        SKEL K 10 A_SkelMissile
+        SKEL K 10 A_CustomMissile("RevenantTracer2_Toby", 48, 0, 0, 0, 0)
         SKEL K 10 A_FaceTarget
         Goto See
     Pain:

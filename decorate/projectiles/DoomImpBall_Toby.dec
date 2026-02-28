@@ -17,10 +17,13 @@ ACTOR DoomImpBall_Toby replaces DoomImpBall
     States
     {
     Spawn:
-        BAL1 AB 4 BRIGHT
+		BAL1 A 4 Bright A_PlaySoundEx("projectiles/impball", "Auto", 1, 0)
+        BAL1 B 4 BRIGHT
         Loop
     Death:
-        BAL1 CDE 6 BRIGHT
+		BAL1 C 3 Bright A_StopSound
+		BAL1 C 3 Bright A_PlaySoundEx("imp/shotx", "Auto", 0, 0)
+        BAL1 DE 6 BRIGHT
         Stop
     }
 }
