@@ -1,0 +1,75 @@
+ACTOR RevenantTracer1_Toby
+{
+	Radius 11
+	Height 8
+	Speed 10
+	Damage 10
+	Projectile 
+	-SEEKERMISSILE 
+	+RANDOMIZE
+	SeeSound "skeleton/attack"
+	DeathSound "skeleton/tracex"
+	RenderStyle Add
+	States
+	{
+	Spawn:
+		FATB A 2 Bright A_PlaySoundEx("projectiles/revmissile", "Auto", 1, 0)
+		FATB B 2 BRIGHT
+		Loop
+	Death:
+		FBXP A 4 BRIGHT A_StopSound
+		FBXP A 4 Bright A_PlaySoundEx("skeleton/tracex", "Auto", 0, 0)
+		FBXP B 6 BRIGHT
+		FBXP C 4 BRIGHT
+		Stop
+	}
+}
+
+
+ACTOR RevenantTracer2_Toby
+{
+	Radius 11
+	Height 8
+	Speed 10
+	Damage 10
+	Projectile 
+	+SEEKERMISSILE 
+	+RANDOMIZE
+	SeeSound "skeleton/attack"
+	DeathSound "skeleton/tracex"
+	RenderStyle Add
+	States
+	{
+	Spawn:
+		FATB A 2 Bright A_Tracer2
+		FATB A 0 Bright A_PlaySoundEx("projectiles/revmissile", "Auto", 1, 0)
+		FATB A 0 Bright A_ThrowGrenade("RevenantTracerSmoke_Toby", -35, -2, 1)
+		FATB B 2 BRIGHT A_Tracer2
+		FATB B 0 Bright A_PlaySoundEx("skeleton/tracer", "Auto", 0, 0)
+		FATB B 0 Bright A_ThrowGrenade("RevenantTracerSmoke_Toby", -35, -2, 1)
+		FATB AB 2 Bright A_Tracer2
+		Loop
+	Death:
+		FBXP A 4 BRIGHT A_StopSound
+		FBXP A 4 Bright A_PlaySoundEx("skeleton/tracex", "Auto", 0, 0)
+		FBXP B 6 BRIGHT
+		FBXP C 4 BRIGHT
+		Stop
+	}
+}
+
+
+ACTOR RevenantTracerSmoke_Toby
+{
+	+NOBLOCKMAP
+	+NOGRAVITY
+	+NOTELEPORT
+	RenderStyle Translucent 
+	Alpha 0.5
+	States
+	{	
+	Spawn:
+		PUFF ABABC 4
+		Stop
+	}
+}

@@ -18,10 +18,13 @@ ACTOR BaronBall_Toby replaces BaronBall
     States
     {
     Spawn:
-        BAL7 AB 4 BRIGHT
+		BAL7 A 4 Bright A_PlaySoundEx("projectiles/impball", "Auto", 1, 0)
+        BAL7 B 4 BRIGHT
         Loop
     Death:
-        BAL7 CDE 6 BRIGHT
+		BAL7 C 3 Bright A_StopSound
+		BAL7 C 3 Bright A_PlaySoundEx("baron/shotx", "Auto", 0, 0)
+        BAL7 DE 6 BRIGHT
         Stop
     }
 }

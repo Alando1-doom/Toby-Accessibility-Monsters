@@ -17,10 +17,13 @@ ACTOR CacodemonBall_Toby replaces CacodemonBall
     States
     {
     Spawn:
-        BAL2 AB 4 BRIGHT
+		BAL2 A 4 Bright A_PlaySoundEx("projectiles/cacoball", "Auto", 1, 0)
+        BAL2 B 4 BRIGHT
         Loop
     Death:
-        BAL2 CDE 6 BRIGHT
+		BAL2 C 3 Bright A_StopSound
+		BAL2 C 3 Bright A_PlaySoundEx("caco/shotx", "Auto", 0, 0)
+        BAL2 DE 6 BRIGHT
         Stop
     }
 }

@@ -16,10 +16,13 @@ ACTOR ArachnotronPlasma_Toby replaces ArachnotronPlasma
     States
     {
     Spawn:
-        APLS AB 5 BRIGHT
+		APLS A 5 Bright A_PlaySoundEx("projectiles/babyplasma", "Auto", 1, 0)
+        APLS B 5 BRIGHT
         Loop
     Death:
-        APBX ABCDE 5 BRIGHT
+		APBX A 2 Bright A_StopSound
+		APBX A 3 Bright A_PlaySoundEx("baby/shotx", "Auto", 0, 0)
+        APBX BCDE 5 BRIGHT
         Stop
     }
 }
