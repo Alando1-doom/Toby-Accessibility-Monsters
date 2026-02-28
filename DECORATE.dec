@@ -4,6 +4,7 @@
 #include "decorate/projectiles/CacodemonBall_Toby.dec"
 #include "decorate/projectiles/DoomImpBall_Toby.dec"
 #include "decorate/projectiles/FatShot_Toby.dec"
+#include "decorate/projectiles/RevenantTracer_Toby.dec"
 
 //Monsters
 #include "decorate/monsters/Archvile_Toby.dec"
