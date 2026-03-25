@@ -120,6 +120,10 @@ $random spectre/pain        { dem/pain1 dem/pain2 }
 dem/pain1                   dempain1
 dem/pain2                   dempain2
 
+spider/attack				dssmchgn
+$rolloff spider/attack      linear 64 1800
+$rolloff spider/walk		  linear 64 1800
+
 //Monster Projectiles
 projectiles/impball				impfball
 $rolloff projectiles/impball           linear 64 1000

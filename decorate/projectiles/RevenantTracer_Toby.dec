@@ -10,6 +10,7 @@ ACTOR RevenantTracer1_Toby
 	SeeSound "skeleton/attack"
 	DeathSound "skeleton/tracex"
 	RenderStyle Add
+	Decal "RevenantScorch"
 	States
 	{
 	Spawn:
@@ -38,6 +39,7 @@ ACTOR RevenantTracer2_Toby
 	SeeSound "skeleton/attack"
 	DeathSound "skeleton/tracex"
 	RenderStyle Add
+	Decal "RevenantScorch"
 	States
 	{
 	Spawn:
