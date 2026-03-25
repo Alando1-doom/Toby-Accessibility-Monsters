@@ -13,6 +13,7 @@ ACTOR FatShot_Toby replaces FatShot
     Alpha 1
     SeeSound "fatso/attack"
     DeathSound "fatso/shotx"
+	Decal "Scorch"
     States
     {
     Spawn:

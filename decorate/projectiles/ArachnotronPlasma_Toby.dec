@@ -13,11 +13,12 @@ ACTOR ArachnotronPlasma_Toby replaces ArachnotronPlasma
     Alpha 0.75
     SeeSound "baby/attack"
     DeathSound "baby/shotx"
+	Decal "ArachnotronScorch"
     States
     {
     Spawn:
-		APLS A 5 Bright A_PlaySoundEx("projectiles/babyplasma", "Auto", 1, 0)
-        APLS B 5 BRIGHT
+		APLS A 4 Bright A_PlaySoundEx("projectiles/babyplasma", "Auto", 1, 0)
+        APLS B 4 BRIGHT
         Loop
     Death:
 		APBX A 2 Bright A_StopSound
