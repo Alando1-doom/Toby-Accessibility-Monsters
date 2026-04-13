@@ -16,7 +16,7 @@ ACTOR FatShot_Toby replaces FatShot
     States
     {
     Spawn:
-		MANF A 4 Bright A_PlaySoundEx("projectiles/baronball", "Auto", 1, 0)
+		MANF A 4 Bright A_PlaySoundEx("projectiles/mancball", "Auto", 1, 0)
         MANF B 4 BRIGHT
         Loop
     Death:
