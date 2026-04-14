@@ -129,8 +129,12 @@ projectiles/impball				impfball
 $rolloff projectiles/impball           linear 64 1000
 projectiles/cacoball				cacoball
 $rolloff projectiles/cacoball           linear 64 1000
+projectiles/hkball			barnball
+$rolloff projectiles/hkball           linear 64 1000
 projectiles/baronball			barnball
 $rolloff projectiles/baronball           linear 64 1000
+projectiles/mancball			mancball
+$rolloff projectiles/mancball           linear 64 1000
 projectiles/babyplasma		aracplas
 $rolloff projectiles/babyplasma           linear 64 1000
 projectiles/revmissile			revmisl
