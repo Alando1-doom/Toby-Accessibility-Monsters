@@ -5,7 +5,6 @@
 //===========================================================================
 ACTOR ChaingunGuy_Toby replaces ChaingunGuy
 {
-    SpawnID 2
     Health 70
     Radius 20
     Height 56
@@ -28,21 +27,35 @@ ACTOR ChaingunGuy_Toby replaces ChaingunGuy
         Loop
     See:
         CPOS AA 3 A_Chase
+		CPOS A 0 A_PlaySound("zombie/step")
         CPOS BB 3 A_Chase
         CPOS CC 3 A_Chase
+		CPOS C 0 A_PlaySound("zombie/step")
         CPOS DD 3 A_Chase
-        CPOS AA 3 A_Chase
+		CPOS AA 3 A_Chase
+		CPOS A 0 A_PlaySound("zombie/step")
         CPOS BB 3 A_Chase
         CPOS CC 3 A_Chase
+		CPOS C 0 A_PlaySound("zombie/step")
         CPOS DD 3 A_Chase
         CPOS AA 3 A_Chase
+		CPOS A 0 A_PlaySound("zombie/step")
         CPOS BB 3 A_Chase
         CPOS CC 3 A_Chase
+		CPOS C 0 A_PlaySound("zombie/step")
         CPOS DD 3 A_Chase
         CPOS AA 3 A_Chase
+		CPOS A 0 A_PlaySound("zombie/step")
+        CPOS BB 3 A_Chase
+        CPOS CC 3 A_Chase
+		CPOS C 0 A_PlaySound("zombie/step")
+        CPOS DD 3 A_Chase
+        CPOS AA 3 A_Chase
+		CPOS A 0 A_PlaySound("zombie/step")
         CPOS BB 3 A_Chase
         CPOS B 0 A_ActiveSound
         CPOS CC 3 A_Chase
+		CPOS C 0 A_PlaySound("zombie/step")
         CPOS DD 3 A_Chase
         Loop
     Missile:

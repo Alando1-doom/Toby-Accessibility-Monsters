@@ -5,7 +5,6 @@
 //===========================================================================
 ACTOR BaronOfHell_Toby replaces BaronOfHell
 {
-    SpawnID 3
     Health 1000
     Radius 24
     Height 64
@@ -29,12 +28,22 @@ ACTOR BaronOfHell_Toby replaces BaronOfHell
         Loop
     See:
         BOSS AA 3 A_Chase
+		BOSS A 0 A_PlaySound("bruiser/step")
         BOSS BB 3 A_Chase
         BOSS CC 3 A_Chase
+		BOSS C 0 A_PlaySound("bruiser/step")
+        BOSS DD 3 A_Chase
+		BOSS AA 3 A_Chase
+		BOSS A 0 A_PlaySound("bruiser/step")
+        BOSS BB 3 A_Chase
+        BOSS CC 3 A_Chase
+		BOSS C 0 A_PlaySound("bruiser/step")
         BOSS DD 3 A_Chase
         BOSS AA 3 A_Chase
+		BOSS A 0 A_PlaySound("bruiser/step")
         BOSS BB 3 A_Chase
         BOSS CC 3 A_Chase
+		BOSS C 0 A_PlaySound("bruiser/step")
         BOSS DD 3 A_Chase
         BOSS D 0 A_ActiveSound
         Loop

@@ -5,7 +5,6 @@
 //===========================================================================
 ACTOR Demon_Toby replaces Demon
 {
-    SpawnID 8
     Health 150
     PainChance 180
     Speed 10
@@ -27,16 +26,28 @@ ACTOR Demon_Toby replaces Demon
         Loop
     See:
         SARG AA 2 Fast A_Chase
+		SARG A 0 Fast A_PlaySound("demon/step")
         SARG BB 2 Fast A_Chase
         SARG CC 2 Fast A_Chase
+		SARG C 0 Fast A_PlaySound("demon/step")
+        SARG DD 2 Fast A_Chase
+		SARG AA 2 Fast A_Chase
+		SARG A 0 Fast A_PlaySound("demon/step")
+        SARG BB 2 Fast A_Chase
+        SARG CC 2 Fast A_Chase
+		SARG C 0 Fast A_PlaySound("demon/step")
         SARG DD 2 Fast A_Chase
         SARG AA 2 Fast A_Chase
+		SARG A 0 Fast A_PlaySound("demon/step")
         SARG BB 2 Fast A_Chase
         SARG CC 2 Fast A_Chase
+		SARG C 0 Fast A_PlaySound("demon/step")
         SARG DD 2 Fast A_Chase
         SARG AA 2 Fast A_Chase
+		SARG A 0 Fast A_PlaySound("demon/step")
         SARG BB 2 Fast A_Chase
         SARG CC 2 Fast A_Chase
+		SARG C 0 Fast A_PlaySound("demon/step")
         SARG DD 2 Fast A_Chase
         SARG D 0 Fast A_ActiveSound
         Loop

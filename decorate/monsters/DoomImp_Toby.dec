@@ -5,7 +5,6 @@
 //===========================================================================
 ACTOR DoomImp_Toby replaces DoomImp
 {
-    SpawnID 5
     Health 60
     Radius 20
     Height 56
@@ -27,12 +26,28 @@ ACTOR DoomImp_Toby replaces DoomImp
         Loop
     See:
         TROO AA 3 A_Chase
+		TROO A 0 A_PlaySound("imp/step")
         TROO BB 3 A_Chase
         TROO CC 3 A_Chase
+		TROO C 0 A_PlaySound("imp/step")
+        TROO DD 3 A_Chase
+		TROO AA 3 A_Chase
+		TROO A 0 A_PlaySound("imp/step")
+        TROO BB 3 A_Chase
+        TROO CC 3 A_Chase
+		TROO C 0 A_PlaySound("imp/step")
+        TROO DD 3 A_Chase
+		TROO AA 3 A_Chase
+		TROO A 0 A_PlaySound("imp/step")
+        TROO BB 3 A_Chase
+        TROO CC 3 A_Chase
+		TROO C 0 A_PlaySound("imp/step")
         TROO DD 3 A_Chase
         TROO AA 3 A_Chase
+		TROO A 0 A_PlaySound("imp/step")
         TROO BB 3 A_Chase
         TROO CC 3 A_Chase
+		TROO C 0 A_PlaySound("imp/step")
         TROO DD 3 A_Chase
         TROO D 0 A_ActiveSound
         Loop
