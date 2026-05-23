@@ -25,6 +25,16 @@ chainguy/active             CHAINACT
 chainguy/pain               CHANPAIN
 chainguy/attack             dszomsht
 
+$random zombie/step		{ zom/step1 zom/step2 zom/step3 zom/step4 }
+zom/step1				zomstp1
+zom/step2				zomstp2
+zom/step3				zomstp3
+zom/step4				zomstp4
+$rolloff zom/step1           linear 64 768
+$rolloff zom/step2           linear 64 768
+$rolloff zom/step3           linear 64 768
+$rolloff zom/step4           linear 64 768
+
 //Imp
 //$rolloff imp/sight        linear 64 512
 //$rolloff imp/pain	linear  64 512
@@ -32,11 +42,30 @@ chainguy/attack             dszomsht
 //$rolloff imp/death        linear 64 512
 imp/pain                    dsimppn
 
+$random imp/step		{ imp/step1 imp/step2 imp/step3 imp/step4 }
+imp/step1				impstep1
+imp/step2				impstep2
+imp/step3				impstep3
+imp/step4				impstep4
+$rolloff imp/step1           linear 64 768
+$rolloff imp/step2           linear 64 768
+$rolloff imp/step3           linear 64 768
+$rolloff imp/step4           linear 64 768
+
 //Archvile
 //$rolloff vile/sight       linear 64 512
 //$rolloff vile/pain        linear 64 512
 //$rolloff vile/active      linear 64 512
 //$rolloff vile/death       linear 64 512
+$random vile/step		{ vile/step1 vile/step2 vile/step3 vile/step4 }
+vile/step1				vilest1
+vile/step2				vilest2
+vile/step3				vilest3
+vile/step4				vilest4
+$rolloff vile/step1           linear 64 768
+$rolloff vile/step2           linear 64 768
+$rolloff vile/step3           linear 64 768
+$rolloff vile/step4           linear 64 768
 
 //Arachnotron
 //$rolloff baby/sight       linear 64 512
@@ -64,7 +93,7 @@ $rolloff skull/active       linear 64 512
 //$rolloff skull/pain       linear 64 512
 //$rolloff skull/death      linear 64 512
 skull/see                   soulsee
-skull/melee                 soulattk
+skull/melee               dssklatk
 skull/pain                  soulpain
 skull/death                 souldie
 
@@ -83,7 +112,17 @@ baron/pain                  barpain
 //Hell Knight
 //$rolloff knight/active    linear 64 512
 knight/active               hkact
-knight/pain                 barpain
+knight/pain                 dskntpai
+
+$random bruiser/step		{ hoof/step1 hoof/step2 hoof/step3 hoof/step4}
+hoof/step1			brustep1
+hoof/step2			brustep2
+hoof/step3			brustep3
+hoof/step4			brustep4
+$rolloff hoof/step1           linear 64 768
+$rolloff hoof/step2           linear 64 768
+$rolloff hoof/step3           linear 64 768
+$rolloff hoof/step4           linear 64 768
 
 //Pain Elemental
 //$rolloff pain/sight       linear 64 512
@@ -101,6 +140,16 @@ pain/act2                   painact2
 //$rolloff skeleton/active  linear 64 512
 //$rolloff skeleton/death   linear 64 512
 skeleton/pain               revpain
+
+$random skeleton/step		{ rev/step1 rev/step2 rev/step3 rev/step4 }
+rev/step1				revstep1
+rev/step2				revstep2
+rev/step3				revstep3
+rev/step4				revstep4
+$rolloff rev/step1           linear 64 768
+$rolloff rev/step2           linear 64 768
+$rolloff rev/step3           linear 64 768
+$rolloff rev/step4           linear 64 768
 
 //Demon
 $random demon/active        { dem/act1 dem/act2 dem/act3 dem/act4 }
@@ -120,6 +169,19 @@ $random spectre/pain        { dem/pain1 dem/pain2 }
 dem/pain1                   dempain1
 dem/pain2                   dempain2
 
+<<<<<<< Updated upstream
+=======
+$random demon/step		{ dem/step1 dem/step2 dem/step3 dem/step4 }
+dem/step1			pinkyst1
+dem/step2			pinkyst2
+dem/step3			pinkyst3
+dem/step4			pinkyst4
+$rolloff dem/step1           linear 64 768
+$rolloff dem/step2           linear 64 768
+$rolloff dem/step3           linear 64 768
+$rolloff dem/step4           linear 64 768
+
+>>>>>>> Stashed changes
 spider/attack				dssmchgn
 $rolloff spider/attack      linear 64 1800
 $rolloff spider/walk		  linear 64 1800

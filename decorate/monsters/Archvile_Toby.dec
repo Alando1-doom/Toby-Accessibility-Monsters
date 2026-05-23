@@ -6,7 +6,6 @@
 
 ACTOR Archvile_Toby replaces Archvile
 {
-    SpawnID 111
     Health 700
     Radius 20
     Height 56
@@ -31,15 +30,27 @@ ACTOR Archvile_Toby replaces Archvile
         Loop
     See:
         VILE AA 2 A_VileChase
+		VILE A 0 A_PlaySound("vile/step")
         VILE BB 2 A_VileChase
         VILE CC 2 A_VileChase
         VILE DD 2 A_VileChase
+		VILE D 0 A_PlaySound("vile/step")
+        VILE EE 2 A_VileChase
+        VILE FF 2 A_VileChase
+		VILE AA 2 A_VileChase
+		VILE A 0 A_PlaySound("vile/step")
+        VILE BB 2 A_VileChase
+        VILE CC 2 A_VileChase
+        VILE DD 2 A_VileChase
+		VILE D 0 A_PlaySound("vile/step")
         VILE EE 2 A_VileChase
         VILE FF 2 A_VileChase
         VILE AA 2 A_VileChase
+		VILE A 0 A_PlaySound("vile/step")
         VILE BB 2 A_VileChase
         VILE CC 2 A_VileChase
         VILE DD 2 A_VileChase
+		VILE D 0 A_PlaySound("vile/step")
         VILE EE 2 A_VileChase
         VILE FF 2 A_VileChase
         VILE F 0 A_ActiveSound

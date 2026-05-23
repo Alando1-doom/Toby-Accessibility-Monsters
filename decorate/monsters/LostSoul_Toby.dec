@@ -5,7 +5,6 @@
 //===========================================================================
 ACTOR LostSoul_Toby replaces LostSoul
 {
-    SpawnID 110
     Health 100
     Radius 16
     Height 56
@@ -43,6 +42,12 @@ ACTOR LostSoul_Toby replaces LostSoul
         SKUL A 6 Bright A_Chase
         SKUL B 6 BRIGHT A_Chase
         SKUL A 6 Bright A_Chase
+        SKUL B 6 BRIGHT A_Chase
+		SKUL A 6 Bright A_Chase
+        SKUL B 6 BRIGHT A_Chase
+		SKUL A 6 Bright A_Chase
+        SKUL B 6 BRIGHT A_Chase
+		SKUL A 6 Bright A_Chase
         SKUL B 6 BRIGHT A_Chase
         SKUL B 0 Bright A_ActiveSound
         Loop

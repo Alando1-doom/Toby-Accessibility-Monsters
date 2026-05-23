@@ -5,7 +5,6 @@
 //===========================================================================
 ACTOR Revenant_Toby replaces Revenant
 {
-    SpawnID 20
     Health 300
     Radius 20
     Height 56
@@ -30,15 +29,27 @@ ACTOR Revenant_Toby replaces Revenant
         Loop
     See:
         SKEL AA 2 A_Chase
+		SKEL A 0 A_PlaySound("skeleton/step")
         SKEL BB 2 A_Chase
         SKEL CC 2 A_Chase
         SKEL DD 2 A_Chase
+		SKEL D 0 A_PlaySound("skeleton/step")
+        SKEL EE 2 A_Chase
+        SKEL FF 2 A_Chase
+		SKEL AA 2 A_Chase
+		SKEL A 0 A_PlaySound("skeleton/step")
+        SKEL BB 2 A_Chase
+        SKEL CC 2 A_Chase
+        SKEL DD 2 A_Chase
+		SKEL D 0 A_PlaySound("skeleton/step")
         SKEL EE 2 A_Chase
         SKEL FF 2 A_Chase
         SKEL AA 2 A_Chase
+		SKEL A 0 A_PlaySound("skeleton/step")
         SKEL BB 2 A_Chase
         SKEL CC 2 A_Chase
         SKEL DD 2 A_Chase
+		SKEL D 0 A_PlaySound("skeleton/step")
         SKEL EE 2 A_Chase
         SKEL FF 2 A_Chase
         SKEL F 0 A_ActiveSound

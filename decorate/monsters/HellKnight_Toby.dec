@@ -5,7 +5,6 @@
 //===========================================================================
 ACTOR HellKnight_Toby : BaronOfHell_Toby replaces HellKnight
 {
-    SpawnID 113
     Health 500
     -BOSSDEATH
     SeeSound "knight/sight"
@@ -21,12 +20,22 @@ ACTOR HellKnight_Toby : BaronOfHell_Toby replaces HellKnight
         Loop
     See:
         BOS2 AA 3 A_Chase
+		BOS2 A 0 A_PlaySound("bruiser/step")
         BOS2 BB 3 A_Chase
         BOS2 CC 3 A_Chase
+		BOS2 C 0 A_PlaySound("bruiser/step")
+        BOS2 DD 3 A_Chase
+		BOS2 AA 3 A_Chase
+		BOS2 A 0 A_PlaySound("bruiser/step")
+        BOS2 BB 3 A_Chase
+        BOS2 CC 3 A_Chase
+		BOS2 C 0 A_PlaySound("bruiser/step")
         BOS2 DD 3 A_Chase
         BOS2 AA 3 A_Chase
+		BOS2 A 0 A_PlaySound("bruiser/step")
         BOS2 BB 3 A_Chase
         BOS2 CC 3 A_Chase
+		BOS2 C 0 A_PlaySound("bruiser/step")
         BOS2 DD 3 A_Chase
         BOS2 D 0 A_ActiveSound
         Loop
