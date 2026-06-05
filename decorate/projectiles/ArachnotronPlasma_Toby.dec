@@ -1,7 +1,6 @@
 ACTOR ArachnotronPlasma_Toby replaces ArachnotronPlasma
 {
     Game Doom
-    SpawnID 129
     Radius 13
     Height 8
     Speed 25

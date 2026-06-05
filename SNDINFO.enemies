@@ -25,6 +25,19 @@ chainguy/active             CHAINACT
 chainguy/pain               CHANPAIN
 chainguy/attack             dszomsht
 
+<<<<<<< Updated upstream
+=======
+$random zombie/step		{ zom/step1 zom/step2 zom/step3 zom/step4 }
+zom/step1				zomstp1
+zom/step2				zomstp2
+zom/step3				zomstp3
+zom/step4				zomstp4
+$rolloff zom/step1           linear 64 480
+$rolloff zom/step2           linear 64 480
+$rolloff zom/step3           linear 64 480
+$rolloff zom/step4           linear 64 480
+
+>>>>>>> Stashed changes
 //Imp
 //$rolloff imp/sight        linear 64 512
 //$rolloff imp/pain	linear  64 512
@@ -32,11 +45,36 @@ chainguy/attack             dszomsht
 //$rolloff imp/death        linear 64 512
 imp/pain                    dsimppn
 
+<<<<<<< Updated upstream
+=======
+$random imp/step		{ imp/step1 imp/step2 imp/step3 imp/step4 }
+imp/step1				impstep1
+imp/step2				impstep2
+imp/step3				impstep3
+imp/step4				impstep4
+$rolloff imp/step1           linear 64 480
+$rolloff imp/step2           linear 64 480
+$rolloff imp/step3           linear 64 480
+$rolloff imp/step4           linear 64 480
+
+>>>>>>> Stashed changes
 //Archvile
 //$rolloff vile/sight       linear 64 512
 //$rolloff vile/pain        linear 64 512
 //$rolloff vile/active      linear 64 512
 //$rolloff vile/death       linear 64 512
+<<<<<<< Updated upstream
+=======
+$random vile/step		{ vile/step1 vile/step2 vile/step3 vile/step4 }
+vile/step1				vilest1
+vile/step2				vilest2
+vile/step3				vilest3
+vile/step4				vilest4
+$rolloff vile/step1           linear 64 480
+$rolloff vile/step2           linear 64 480
+$rolloff vile/step3           linear 64 480
+$rolloff vile/step4           linear 64 480
+>>>>>>> Stashed changes
 
 //Arachnotron
 //$rolloff baby/sight       linear 64 512
@@ -79,11 +117,28 @@ caco/pain                   cacopain
 //$rolloff baron/active     linear 64 512
 baron/active                baron
 baron/pain                  barpain
+baron/attack				barnfire
+$volume baron/attack     0.8
 
 //Hell Knight
 //$rolloff knight/active    linear 64 512
 knight/active               hkact
+<<<<<<< Updated upstream
 knight/pain                 barpain
+=======
+knight/pain                 dskntpai
+knight/attack				hkfire
+
+$random bruiser/step		{ hoof/step1 hoof/step2 hoof/step3 hoof/step4}
+hoof/step1			brustep1
+hoof/step2			brustep2
+hoof/step3			brustep3
+hoof/step4			brustep4
+$rolloff hoof/step1           linear 64 512
+$rolloff hoof/step2           linear 64 512
+$rolloff hoof/step3           linear 64 512
+$rolloff hoof/step4           linear 64 512
+>>>>>>> Stashed changes
 
 //Pain Elemental
 //$rolloff pain/sight       linear 64 512
@@ -102,6 +157,19 @@ pain/act2                   painact2
 //$rolloff skeleton/death   linear 64 512
 skeleton/pain               revpain
 
+<<<<<<< Updated upstream
+=======
+$random skeleton/step		{ rev/step1 rev/step2 rev/step3 rev/step4 }
+rev/step1				revstep1
+rev/step2				revstep2
+rev/step3				revstep3
+rev/step4				revstep4
+$rolloff rev/step1           linear 64 512
+$rolloff rev/step2           linear 64 512
+$rolloff rev/step3           linear 64 512
+$rolloff rev/step4           linear 64 512
+
+>>>>>>> Stashed changes
 //Demon
 $random demon/active        { dem/act1 dem/act2 dem/act3 dem/act4 }
 $random spectre/active      { dem/act1 dem/act2 dem/act3 dem/act4 }
@@ -120,24 +188,41 @@ $random spectre/pain        { dem/pain1 dem/pain2 }
 dem/pain1                   dempain1
 dem/pain2                   dempain2
 
+<<<<<<< Updated upstream
+=======
+$random demon/step		{ dem/step1 dem/step2 dem/step3 dem/step4 }
+dem/step1			pinkyst1
+dem/step2			pinkyst2
+dem/step3			pinkyst3
+dem/step4			pinkyst4
+$rolloff dem/step1           linear 64 480
+$rolloff dem/step2           linear 64 480
+$rolloff dem/step3           linear 64 480
+$rolloff dem/step4           linear 64 480
+
+>>>>>>> Stashed changes
 spider/attack				dssmchgn
 $rolloff spider/attack      linear 64 1800
 $rolloff spider/walk		  linear 64 1800
 
 //Monster Projectiles
 projectiles/impball				impfball
-$rolloff projectiles/impball           linear 64 1000
+$rolloff projectiles/impball           linear 96 880
 projectiles/cacoball				cacoball
-$rolloff projectiles/cacoball           linear 64 1000
-projectiles/hkball			barnball
-$rolloff projectiles/hkball           linear 64 1000
+$rolloff projectiles/cacoball           linear 48 768
+projectiles/hkball			hkball
+$rolloff projectiles/hkball           linear 96 880
+$volume projectiles/hkball     0.5
 projectiles/baronball			barnball
-$rolloff projectiles/baronball           linear 64 1000
+$rolloff projectiles/baronball           linear 96 880
+$volume projectiles/baronball     0.5
 projectiles/mancball			mancball
-$rolloff projectiles/mancball           linear 64 1000
+$rolloff projectiles/mancball           linear 32 768
+$volume projectiles/mancball     0.5
 projectiles/babyplasma		aracplas
-$rolloff projectiles/babyplasma           linear 64 1000
+$rolloff projectiles/babyplasma           linear 48 880
+$volume projectiles/babyplasma     0.5
 projectiles/revmissile			revmisl
-$rolloff projectiles/revmissile           linear 64 1000
+$rolloff projectiles/revmissile           linear 48 768
 skeleton/tracer			revtrace
 $rolloff skeleton/tracer           linear 64 1000

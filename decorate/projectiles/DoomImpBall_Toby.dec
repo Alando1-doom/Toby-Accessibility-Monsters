@@ -1,7 +1,6 @@
 ACTOR DoomImpBall_Toby replaces DoomImpBall
 {
     Game Doom
-    SpawnID 10
     Radius 6
     Height 8
     Speed 10

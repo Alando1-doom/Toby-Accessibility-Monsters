@@ -33,7 +33,7 @@ ACTOR HellKnight_Toby : BaronOfHell_Toby replaces HellKnight
     Melee:
     Missile:
         BOS2 EF 8 A_FaceTarget
-        BOS2 G 8 A_BruisAttack
+        BOS2 G 8 A_CustomMissile("KnightBall_Toby", 32, 0, 0, 0, 0)
         Goto See
     Pain:
         BOS2 H  2
