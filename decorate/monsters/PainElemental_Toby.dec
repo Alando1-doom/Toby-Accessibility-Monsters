@@ -5,7 +5,6 @@
 //===========================================================================
 ACTOR PainElemental_Toby replaces PainElemental
 {
-    SpawnID 115
     Health 400
     Radius 31
     Height 56
@@ -28,13 +27,19 @@ ACTOR PainElemental_Toby replaces PainElemental
         PAIN AA 3 A_Chase
         PAIN BB 3 A_Chase
         PAIN CC 3 A_Chase
-        PAIN AA 3 A_Chase
+		PAIN AA 3 A_Chase
         PAIN BB 3 A_Chase
         PAIN CC 3 A_Chase
         PAIN AA 3 A_Chase
         PAIN BB 3 A_Chase
         PAIN CC 3 A_Chase
         PAIN AA 3 A_Chase
+        PAIN BB 3 A_Chase
+        PAIN CC 3 A_Chase
+        PAIN AA 3 A_Chase
+        PAIN BB 3 A_Chase
+        PAIN CC 3 A_Chase
+		PAIN AA 3 A_Chase
         PAIN BB 3 A_Chase
         PAIN CC 3 A_Chase
         PAIN C 0 A_ActiveSound

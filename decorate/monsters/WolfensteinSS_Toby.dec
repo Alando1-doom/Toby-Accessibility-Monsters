@@ -5,7 +5,6 @@
 //===========================================================================
 ACTOR WolfensteinSS_Toby replaces WolfensteinSS
 {
-    SpawnID 116
     Health 50
     Radius 20
     Height 56
@@ -27,13 +26,23 @@ ACTOR WolfensteinSS_Toby replaces WolfensteinSS
         Loop
     See:
         SSWV AA 3 A_Chase
+		SSWV A 0 A_PlaySound("zombie/step")
         SSWV BB 3 A_Chase
         SSWV CC 3 A_Chase
+		SSWV C 0 A_PlaySound("zombie/step")
+        SSWV DD 3 A_Chase
+		SSWV AA 3 A_Chase
+		SSWV A 0 A_PlaySound("zombie/step")
+        SSWV BB 3 A_Chase
+        SSWV CC 3 A_Chase
+		SSWV C 0 A_PlaySound("zombie/step")
         SSWV DD 3 A_Chase
         SSWV AA 3 A_Chase
+		SSWV A 0 A_PlaySound("zombie/step")
         SSWV BB 3 A_Chase
         SSWV B 0 A_ActiveSound
         SSWV CC 3 A_Chase
+		SSWV C 0 A_PlaySound("zombie/step")
         SSWV DD 3 A_Chase
         Loop
     Missile:
