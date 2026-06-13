@@ -1,7 +1,6 @@
 ACTOR BaronBall_Toby replaces BaronBall
 {
     Game Doom
-    SpawnID 154
     Radius 6
     Height 16
     Speed 15
@@ -17,7 +16,7 @@ ACTOR BaronBall_Toby replaces BaronBall
     States
     {
     Spawn:
-		BAL7 A 4 Bright A_PlaySoundEx("projectiles/impball", "Auto", 1, 0)
+		BAL7 A 4 Bright A_PlaySoundEx("projectiles/baronball", "Auto", 1, 0)
         BAL7 B 4 BRIGHT
         Loop
     Death:

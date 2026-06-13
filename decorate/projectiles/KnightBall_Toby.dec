@@ -1,0 +1,28 @@
+ACTOR KnightBall_Toby //A somewhat smaller version of the main Baron Ball but has different sounds to differentiate between the 2 monsters.
+{
+    Game Doom
+    Radius 6
+    Height 16
+    Speed 15
+    Damage 8
+    Projectile
+    +RANDOMIZE
+    +THRUGHOST
+    RenderStyle Add
+    Alpha 1
+    SeeSound "knight/attack"
+    DeathSound "baron/shotx"
+    Decal "BaronScorch"
+    States
+    {
+    Spawn:
+		HKBL A 4 Bright A_PlaySoundEx("projectiles/hkball", "Auto", 1, 0)
+        HKBL B 4 BRIGHT
+        Loop
+    Death:
+		HKBL C 3 Bright A_StopSound
+		HKBL D 3 Bright A_PlaySoundEx("baron/shotx", "Auto", 0, 0)
+        HKBL EF 6 BRIGHT
+        Stop
+    }
+}

@@ -1,6 +1,7 @@
 //Projectiles
 #include "decorate/projectiles/ArachnotronPlasma_Toby.dec"
 #include "decorate/projectiles/BaronBall_Toby.dec"
+#include "decorate/projectiles/KnightBall_Toby.dec"
 #include "decorate/projectiles/CacodemonBall_Toby.dec"
 #include "decorate/projectiles/DoomImpBall_Toby.dec"
 #include "decorate/projectiles/FatShot_Toby.dec"
